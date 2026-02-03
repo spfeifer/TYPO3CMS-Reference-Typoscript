@@ -847,6 +847,8 @@ Properties
                 PSR-14 event :ref:`t3coreapi:AfterPageTreeItemsPreparedEvent` to assign
                 multiple labels to a page.
 
+
+
         ..  todo:: does this still work with site configuration?
         ..  _useroptions-pageTree-showDomainNameWithTitle:
 
@@ -858,6 +860,20 @@ Properties
             If set, the domain name will be appended to the page title for
             pages that have :guilabel:`Is root of web site?` checked in the page properties.
             Useful if there are several domains in one page tree.
+
+        ..  _useroptions-pageTree-searchInTranslatedPages:
+
+        ..  confval:: searchInTranslatedPages
+            :name: useroptions-pageTree-searchInTranslatedPages
+            :type: boolean
+            :Path: options.pageTree.searchInTranslatedPages
+
+            ..  versionadded:: 14.1
+
+            Set by default. The page tree filter supports searching for pages
+            through their translated content, making it easy to find pages in
+            multilingual installations. User permissions (language restrictions) and
+            workspace context are respected.
 
 
         ..  _useroptions-pageTree-showNavTitle:
